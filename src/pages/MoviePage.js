@@ -13,7 +13,7 @@ const MoviePage = () => {
 
     useEffect(() => {
         getMovieByName(name).then(data => setMovie(data[0]));
-        getGenre(1).then(data => console.log(data));
+        //getGenre(movie.id).then(data => setGenres(data));
     }, []);
 
     return (
